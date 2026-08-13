@@ -1,30 +1,54 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Rizuka's Site</title>
 
-    <link rel="stylesheet" href="style.css?v=2">
+    <link rel="stylesheet" href="style.css?v=3">
 </head>
 
 <body>
 
-    <!-- Navbar -->
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
     <nav>
-        <div class="logo">♡ My Website</div>
+
+        <div class="logo">
+            ♡ My Website
+        </div>
 
         <div class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#projects">
+                Projects
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
         </div>
+
     </nav>
 
 
-    <!-- Hero -->
+    <!-- =========================
+         HERO
+    ========================== -->
+
     <section id="home" class="hero">
 
         <div class="hero-text">
@@ -39,7 +63,8 @@
             </h1>
 
             <p>
-                Take a pause, breathe, and enjoy the little things🧸✨
+                Take a pause, breathe, and enjoy the little things
+                🧸✨
             </p>
 
             <a href="#about" class="button">
@@ -51,7 +76,10 @@
     </section>
 
 
-    <!-- About -->
+    <!-- =========================
+         ABOUT
+    ========================== -->
+
     <section id="about" class="section about">
 
         <p class="section-label">
@@ -65,35 +93,60 @@
         <div class="about-container">
 
             <div class="profile-image">
-                <img src="profile.jpg" alt="Foto profil saya">
+
+                <img
+                    src="profile.jpg"
+                    alt="Foto profil saya"
+                >
+
             </div>
+
 
             <div class="about-text">
 
                 <p class="description">
+
                     Crafting a life filled with coffee beans & pink dreams.
+
                     Namaku Rizuka Denna. Aku hidup di antara perpaduan
                     pahit-manisnya kopi dan cantiknya warna pink.
+
                     Tempat ini adalah jurnal digital dan sudut bahagiaku
                     untuk berbagi kehangatan, inspirasi, dan momen-momen manis.
-                    Seduh kopimu, dan mari jelajahi duniamu denganku! ☕✨
+
+                    Seduh kopimu, dan mari jelajahi duniamu denganku!
+                    ☕✨
+
                 </p>
 
-<div class="about-tags">
 
-    <span>☕ Coffee lover</span>
+                <div class="about-tags">
 
-    <span>🌷 Pink things</span>
+                    <span>
+                        ☕ Coffee lover
+                    </span>
 
-    <span>✨ Little dreams</span>
+                    <span>
+                        🌷 Pink things
+                    </span>
 
-</div>
+                    <span>
+                        ✨ Little dreams
+                    </span>
+
+                </div>
+
+            </div>
+
         </div>
 
     </section>
 
 
-    <!-- Projects -->
+    <!-- =========================
+         PROJECTS
+    ========================== -->
+
     <section id="projects" class="section projects">
 
         <p class="section-label">
@@ -104,7 +157,13 @@
             Project Saya 🎀
         </h2>
 
+
         <div class="project-container">
+
+
+            <!-- =====================
+                 PROJECT ONE
+            ====================== -->
 
             <div class="project-card">
 
@@ -113,30 +172,57 @@
                     alt="Project pertama"
                 >
 
+
                 <h3>
                     🌷 Project One
                 </h3>
+
 
                 <p>
                     Website sederhana pertama saya.
                 </p>
 
+
+                <!-- QUOTE DI DALAM PROJECT ONE -->
+
+                <div class="project-quote">
+
+                    <span class="quote-label">
+                        LITTLE REMINDERS ✨
+                    </span>
+
+
+                    <span
+                        class="quote-number"
+                        id="quoteNumber"
+                    >
+                        01 / 05
+                    </span>
+
+
+                    <p id="quoteText">
+
+                        “Pelan-pelan juga tetap maju.
+                        Kamu tidak harus terburu-buru.”
+
+                    </p>
+
+
+                    <button
+                        class="quote-button"
+                        onclick="nextQuote()"
+                    >
+                        Another little reminder ♡
+                    </button>
+
+                </div>
+
             </div>
-<div class="quote-corner">
-    <span class="quote-label">LITTLE REMINDERS ✨</span>
 
-    <div class="quote-content">
-        <span class="quote-number" id="quoteNumber">01 / 05</span>
 
-        <p id="quoteText">
-            “Pelan-pelan juga tetap maju. Kamu tidak harus terburu-buru.”
-        </p>
-
-        <button class="quote-button" onclick="nextQuote()">
-            Another little reminder ♡
-        </button>
-    </div>
-</div>
+            <!-- =====================
+                 PROJECT TWO
+            ====================== -->
 
             <div class="project-card">
 
@@ -145,9 +231,11 @@
                     alt="Project kedua"
                 >
 
+
                 <h3>
                     🧸 Project Two
                 </h3>
+
 
                 <p>
                     Project kreatif yang sedang saya kerjakan.
@@ -156,6 +244,10 @@
             </div>
 
 
+            <!-- =====================
+                 PROJECT THREE
+            ====================== -->
+
             <div class="project-card">
 
                 <img
@@ -163,9 +255,11 @@
                     alt="Project ketiga"
                 >
 
+
                 <h3>
                     ☕ Project Three
                 </h3>
+
 
                 <p>
                     Sesuatu yang ingin saya buat berikutnya.
@@ -173,34 +267,47 @@
 
             </div>
 
+
         </div>
 
     </section>
 
 
-    <!-- Contact -->
+    <!-- =========================
+         CONTACT
+    ========================== -->
+
     <section id="contact" class="section contact">
 
         <p class="section-label">
             CONTACT
         </p>
 
+
         <h2>
             Let's Connect 💌
         </h2>
+
 
         <p class="description">
             Terima kasih sudah mengunjungi website saya.
         </p>
 
-        <a href="mailto:emailkamu@gmail.com" class="button">
+
+        <a
+            href="mailto:emailkamu@gmail.com"
+            class="button"
+        >
             Kirim Email 💌
         </a>
 
     </section>
 
 
-    <!-- Footer -->
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
     <footer>
 
         <p>
@@ -208,42 +315,83 @@
         </p>
 
     </footer>
-<script>
-const quotes = [
-    "“Pelan-pelan juga tetap maju. Kamu tidak harus terburu-buru.”",
 
-    "“Kamu tidak harus sempurna untuk menjadi seseorang yang berharga.”",
 
-    "“Istirahat sebentar bukan berarti kamu menyerah.”",
+    <!-- =========================
+         QUOTES JAVASCRIPT
+    ========================== -->
 
-    "“Hal kecil yang kamu lakukan hari ini tetap berarti.”",
+    <script>
 
-    "“Percaya pada dirimu sendiri. Kamu sudah melewati banyak hal sampai di sini.”"
-];
+        const quotes = [
 
-let currentQuote = 0;
+            "“Pelan-pelan juga tetap maju. Kamu tidak harus terburu-buru.”",
 
-function nextQuote() {
-    const quoteText = document.getElementById("quoteText");
-    const quoteNumber = document.getElementById("quoteNumber");
+            "“Kamu tidak harus sempurna untuk menjadi seseorang yang berharga.”",
 
-    quoteText.style.opacity = "0";
-    quoteText.style.transform = "translateY(6px)";
+            "“Istirahat sebentar bukan berarti kamu menyerah.”",
 
-    setTimeout(() => {
-        currentQuote = (currentQuote + 1) % quotes.length;
+            "“Hal kecil yang kamu lakukan hari ini tetap berarti.”",
 
-        quoteText.textContent = quotes[currentQuote];
+            "“Percaya pada dirimu sendiri. Kamu sudah melewati banyak hal sampai di sini.”"
 
-        quoteNumber.textContent =
-            String(currentQuote + 1).padStart(2, "0") +
-            " / " +
-            String(quotes.length).padStart(2, "0");
+        ];
 
-        quoteText.style.opacity = "1";
-        quoteText.style.transform = "translateY(0)";
-    }, 250);
-}
-</script>
+
+        let currentQuote = 0;
+
+
+        function nextQuote() {
+
+            const quoteText =
+                document.getElementById("quoteText");
+
+            const quoteNumber =
+                document.getElementById("quoteNumber");
+
+
+            /* Animasi keluar */
+
+            quoteText.style.opacity = "0";
+
+            quoteText.style.transform =
+                "translateY(6px)";
+
+
+            setTimeout(() => {
+
+                /* Ganti quote */
+
+                currentQuote =
+                    (currentQuote + 1) % quotes.length;
+
+
+                quoteText.textContent =
+                    quotes[currentQuote];
+
+
+                /* Ganti nomor */
+
+                quoteNumber.textContent =
+                    String(currentQuote + 1).padStart(2, "0")
+                    + " / "
+                    + String(quotes.length).padStart(2, "0");
+
+
+                /* Animasi masuk */
+
+                quoteText.style.opacity = "1";
+
+                quoteText.style.transform =
+                    "translateY(0)";
+
+            }, 250);
+
+        }
+
+    </script>
+
+
 </body>
+
 </html>
