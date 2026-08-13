@@ -208,6 +208,42 @@
         </p>
 
     </footer>
+<script>
+const quotes = [
+    "“Pelan-pelan juga tetap maju. Kamu tidak harus terburu-buru.”",
 
+    "“Kamu tidak harus sempurna untuk menjadi seseorang yang berharga.”",
+
+    "“Istirahat sebentar bukan berarti kamu menyerah.”",
+
+    "“Hal kecil yang kamu lakukan hari ini tetap berarti.”",
+
+    "“Percaya pada dirimu sendiri. Kamu sudah melewati banyak hal sampai di sini.”"
+];
+
+let currentQuote = 0;
+
+function nextQuote() {
+    const quoteText = document.getElementById("quoteText");
+    const quoteNumber = document.getElementById("quoteNumber");
+
+    quoteText.style.opacity = "0";
+    quoteText.style.transform = "translateY(6px)";
+
+    setTimeout(() => {
+        currentQuote = (currentQuote + 1) % quotes.length;
+
+        quoteText.textContent = quotes[currentQuote];
+
+        quoteNumber.textContent =
+            String(currentQuote + 1).padStart(2, "0") +
+            " / " +
+            String(quotes.length).padStart(2, "0");
+
+        quoteText.style.opacity = "1";
+        quoteText.style.transform = "translateY(0)";
+    }, 250);
+}
+</script>
 </body>
 </html>
