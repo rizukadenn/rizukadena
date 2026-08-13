@@ -1449,3 +1449,69 @@ footer p {
         font-size: 14px;
     }
 }
+/* =====================================================
+   ✿ HERO — FINAL SPACING POLISH
+   ===================================================== */
+
+.hero {
+    min-height: calc(100vh - 70px);
+    padding: 70px 30px 60px;
+    box-sizing: border-box;
+}
+
+.hero-text {
+    padding: 60px 50px 55px;
+}
+
+
+/* Welcome badge turun sedikit */
+.hero .small-title {
+    margin-bottom: 30px;
+}
+
+
+/* Judul sedikit diperkecil supaya lebih lega */
+.hero h1 {
+    font-size: clamp(3.6rem, 6.5vw, 5.8rem);
+    line-height: 0.94;
+}
+
+
+/* Tulip lebih dekat ke judul */
+.hero h1::after {
+    margin-left: 10px;
+    font-size: 0.5em;
+}
+
+
+/* Deskripsi */
+.hero p:not(.small-title) {
+    margin: 26px auto 30px;
+}
+
+
+/* Tombol */
+.hero .button {
+    padding: 14px 32px;
+}
+
+
+/* =====================================================
+   ✿ MOBILE
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: calc(100vh - 70px);
+        padding: 45px 15px 40px;
+    }
+
+    .hero-text {
+        padding: 48px 22px 45px;
+    }
+
+    .hero h1 {
+        font-size: clamp(3rem, 14vw, 4.5rem);
+    }
+}
