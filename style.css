@@ -2379,3 +2379,23 @@ footer p {
         height: 240px;
     }
 }
+/* PAKSA 3 KARTU MEMILIKI LEBAR YANG SAMA */
+.projects-grid > .project-card {
+    flex: none !important;
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+}
+
+/* Jangan biarkan playlist-card mengubah ukuran kolom */
+.projects-grid > .playlist-card {
+    width: 100% !important;
+    max-width: none !important;
+}
+
+/* Ukuran gambar ketiga kartu benar-benar sama */
+.projects-grid > .project-card > img {
+    width: 100% !important;
+    height: 300px !important;
+    object-fit: cover;
+}
