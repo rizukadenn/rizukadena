@@ -1,0 +1,51 @@
+/* Tampilan seluruh halaman */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5eadf;
+    color: #5c4a42;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Kotak utama */
+.container {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 40px;
+    background-color: #fffaf5;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(180, 130, 140, 0.15);
+}
+
+/* Judul */
+h1 {
+    color: #d98fa3;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+/* Paragraf */
+p {
+    font-size: 18px;
+    color: #806b61;
+    margin-bottom: 30px;
+}
+
+/* Tombol */
+button {
+    background-color: #e7a6b8;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Efek hover tombol */
+button:hover {
+    background-color: #d98fa3;
+    transform: translateY(-2px);
+}
