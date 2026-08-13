@@ -2467,3 +2467,109 @@ footer p {
         height: 240px !important;
     }
 }
+/* =========================================
+   FINAL FIX — 3 PROJECT CARD BENAR-BENAR SAMA
+   ========================================= */
+
+#projects .project-container {
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr)) !important;
+
+    gap: 25px !important;
+
+    width: 100% !important;
+    max-width: 1200px !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    align-items: stretch !important;
+}
+
+
+/* SEMUA KARTU */
+#projects .project-container > .project-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: none !important;
+
+    margin: 0 !important;
+
+    box-sizing: border-box !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+
+/* SEMUA GAMBAR */
+#projects .project-container > .project-card > img {
+    width: 100% !important;
+    height: 220px !important;
+
+    object-fit: cover !important;
+
+    display: block !important;
+}
+
+
+/* SUPAYA ISI KARTU TIDAK MENGUBAH LEBAR */
+#projects .project-container > .project-card > h3,
+#projects .project-container > .project-card > p,
+#projects .project-container > .project-card > .project-description,
+#projects .project-container > .project-card > .song-list,
+#projects .project-container > .project-card > .movie-list,
+#projects .project-container > .project-card > .quote-corner {
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+
+/* PROJECT 3 — daftar lagu tetap berada di dalam kartu */
+#projects .playlist-card .song-list {
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+
+/* =========================================
+   DESKTOP
+   ========================================= */
+
+@media (min-width: 901px) {
+
+    #projects .project-container {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr)) !important;
+    }
+
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    #projects .project-container {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+    }
+
+}
+
+
+/* =========================================
+   HP
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    #projects .project-container {
+        grid-template-columns: 1fr !important;
+    }
+
+}
