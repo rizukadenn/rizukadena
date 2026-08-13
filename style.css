@@ -1686,3 +1686,54 @@ footer p {
         line-height: 1.9;
     }
 }
+/* =========================================
+   ABOUT — MINI PERSONAL TAGS
+========================================= */
+
+.about-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.about-tags span {
+    display: inline-flex;
+    align-items: center;
+    padding: 11px 17px;
+
+    border: 1px solid rgba(218, 143, 169, 0.25);
+    border-radius: 999px;
+
+    background: rgba(255, 245, 248, 0.75);
+
+    color: #8b6870;
+    font-size: 13px;
+    font-weight: 600;
+
+    box-shadow: 0 8px 20px rgba(183, 126, 145, 0.08);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+.about-tags span:hover {
+    transform: translateY(-4px);
+    background: #fff;
+    box-shadow: 0 12px 25px rgba(183, 126, 145, 0.15);
+}
+
+/* mobile */
+@media (max-width: 768px) {
+
+    .about-tags {
+        justify-content: center;
+    }
+
+    .about-tags span {
+        font-size: 12px;
+        padding: 10px 14px;
+    }
+}
