@@ -1329,3 +1329,123 @@ footer p {
         bottom: 20px;
     }
 }
+/* =====================================================
+   ✿ HERO POLISH — SOFT EDITORIAL
+   ===================================================== */
+
+.hero {
+    min-height: calc(100vh - 70px);
+    padding: 45px 30px;
+}
+
+.hero-text {
+    width: min(920px, 92%);
+    padding: 58px 50px 55px;
+    border-radius: 38px;
+}
+
+/* Welcome badge lebih subtle */
+.hero .small-title {
+    display: inline-block;
+
+    margin-bottom: 28px;
+    padding: 12px 25px;
+
+    border: 1px solid rgba(220, 145, 170, 0.18);
+    border-radius: 999px;
+
+    background: rgba(255, 255, 255, 0.55);
+
+    box-shadow:
+        0 10px 30px rgba(180, 120, 140, 0.08);
+
+    font-size: 13px;
+    letter-spacing: 4px;
+}
+
+/* Judul sedikit lebih elegan */
+.hero h1 {
+    font-size: clamp(3.8rem, 7vw, 6.3rem);
+    line-height: 0.92;
+    letter-spacing: -4px;
+}
+
+/* Rizu tetap menjadi focal point */
+.hero h1 span {
+    color: #d987a3;
+}
+
+/* Tulip lebih dekat ke judul */
+.hero h1::after {
+    margin-left: 12px;
+    font-size: 0.55em;
+}
+
+/* Description */
+.hero p:not(.small-title) {
+    margin: 28px auto 28px;
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* Button sedikit lebih classy */
+.hero .button {
+    padding: 14px 30px;
+
+    font-size: 14px;
+
+    box-shadow:
+        0 10px 25px rgba(211, 127, 153, 0.20);
+}
+
+/* Dekorasi jangan terlalu dominan */
+.hero-text::before {
+    top: 28px;
+    left: 32px;
+}
+
+.hero-text::after {
+    right: 32px;
+    bottom: 28px;
+}
+
+
+/* =====================================================
+   ✿ MOBILE
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 25px 15px;
+    }
+
+    .hero-text {
+        padding: 45px 22px;
+        border-radius: 30px;
+    }
+
+    .hero .small-title {
+        margin-bottom: 25px;
+        padding: 10px 18px;
+
+        font-size: 10px;
+        letter-spacing: 2.5px;
+    }
+
+    .hero h1 {
+        font-size: clamp(3rem, 14vw, 4.5rem);
+        letter-spacing: -3px;
+    }
+
+    .hero h1::after {
+        margin-left: 0;
+        margin-top: 8px;
+    }
+
+    .hero p:not(.small-title) {
+        margin-top: 25px;
+        font-size: 14px;
+    }
+}
