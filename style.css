@@ -1409,7 +1409,67 @@ footer p {
     right: 32px;
     bottom: 28px;
 }
+/* =========================
+   MOVIE CORNER
+========================= */
 
+.movie-project {
+    text-align: left;
+}
+
+.movie-project h3 {
+    text-align: center;
+}
+
+.movie-intro {
+    text-align: center;
+    margin-bottom: 20px !important;
+}
+
+.movie-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.movie-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+
+    padding: 11px 12px;
+
+    background: rgba(255, 255, 255, 0.75);
+
+    border: 1px solid #f0d8df;
+    border-radius: 14px;
+
+    transition: 0.25s;
+}
+
+.movie-item:hover {
+    transform: translateX(4px);
+    background: #fff;
+}
+
+.movie-item > span {
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.movie-item strong {
+    display: block;
+    color: #a96780;
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+
+.movie-item small {
+    display: block;
+    color: #806d69;
+    font-size: 12px;
+    line-height: 1.45;
+}
 
 /* =====================================================
    ✿ MOBILE
