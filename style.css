@@ -2399,3 +2399,71 @@ footer p {
     height: 300px !important;
     object-fit: cover;
 }
+/* =========================================
+   FIX FINAL - SEMUA PROJECT CARD SAMA LEBAR
+   ========================================= */
+
+/* Container yang menampung semua project */
+.projects-container,
+.projects-grid,
+.project-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 24px !important;
+    width: min(1200px, 90%) !important;
+    max-width: 1200px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Semua kartu */
+.project-card,
+.project-card.playlist-card {
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+}
+
+/* Gambar ketiga kartu */
+.project-card img {
+    width: 100% !important;
+    height: 300px !important;
+    object-fit: cover !important;
+    box-sizing: border-box !important;
+}
+
+/* Desktop */
+@media (min-width: 901px) {
+    .project-card {
+        width: 100% !important;
+    }
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .projects-container,
+    .projects-grid,
+    .project-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 16px !important;
+    }
+
+    .project-card img {
+        height: 220px !important;
+    }
+}
+
+/* HP */
+@media (max-width: 700px) {
+    .projects-container,
+    .projects-grid,
+    .project-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .project-card img {
+        height: 240px !important;
+    }
+}
