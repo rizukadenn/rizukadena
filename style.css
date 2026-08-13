@@ -1814,3 +1814,49 @@ footer p {
 .quote-button:active {
     transform: translateY(0);
 }
+.project-quote {
+    margin-top: 25px;
+    padding: 20px 15px;
+    background: #fff7f9;
+    border-radius: 18px;
+    text-align: center;
+    border: 1px solid #f3d6df;
+}
+
+.project-quote .quote-label {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #d989a5;
+    margin-bottom: 5px;
+}
+
+.project-quote .quote-number {
+    display: block;
+    font-size: 13px;
+    color: #9b7b83;
+    margin-bottom: 12px;
+}
+
+.project-quote p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #765f5a;
+    margin: 10px 0 15px;
+}
+
+.quote-button {
+    border: none;
+    background: #e29ab5;
+    color: white;
+    padding: 9px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.quote-button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
