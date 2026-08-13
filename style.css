@@ -112,4 +112,118 @@
         height: 200px;
     }
 
+}/* =========================
+   ABOUT
+========================= */
+
+.about {
+    background-color: #f7eee7;
+}
+
+.about-container {
+    max-width: 850px;
+    margin: 50px auto 0;
+
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    text-align: left;
+}
+
+.profile-image {
+    flex-shrink: 0;
+}
+
+.profile-image img {
+    width: 250px;
+    height: 250px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 8px solid #fffaf5;
+
+    box-shadow:
+        0 10px 30px rgba(180, 130, 140, 0.2);
+}
+
+.about-text {
+    line-height: 1.8;
+    color: #806b61;
+}
+
+
+/* =========================
+   PROJECT IMAGE
+========================= */
+
+.project-card {
+    overflow: hidden;
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+}
+
+.project-placeholder {
+    height: 180px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #f5dfd7;
+
+    border-radius: 15px;
+
+    font-size: 60px;
+}
+
+
+/* =========================
+   ANIMATION
+========================= */
+
+.hero-text {
+    animation: fadeUp 1s ease;
+}
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================
+   MOBILE ABOUT
+========================= */
+
+@media (max-width: 700px) {
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image img {
+        width: 200px;
+        height: 200px;
+    }
+
 }
