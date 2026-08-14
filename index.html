@@ -1121,7 +1121,163 @@ setInterval(
         }
 
     </script>
+<!-- ✨ DREAMY FLOATING HEARTS & STARS -->
 
+<style>
+
+.floating-love {
+    position: fixed;
+    z-index: 99999;
+
+    pointer-events: none;
+
+    font-size: 24px;
+
+    animation: loveFloat 6s ease-in-out forwards;
+
+    filter: drop-shadow(
+        0 4px 8px rgba(220, 130, 160, 0.25)
+    );
+}
+
+@keyframes loveFloat {
+
+    0% {
+        opacity: 0;
+        transform:
+            translateY(30px)
+            translateX(0)
+            rotate(0deg)
+            scale(0.5);
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.9;
+        transform:
+            translateY(-180px)
+            translateX(35px)
+            rotate(15deg)
+            scale(1.1);
+    }
+
+    75% {
+        opacity: 0.7;
+        transform:
+            translateY(-300px)
+            translateX(-25px)
+            rotate(-10deg)
+            scale(0.95);
+    }
+
+    100% {
+        opacity: 0;
+        transform:
+            translateY(-450px)
+            translateX(20px)
+            rotate(20deg)
+            scale(0.6);
+    }
+}
+
+</style>
+
+
+<script>
+
+const loveSymbols = [
+    "♡",
+    "♥",
+    "✦",
+    "✧",
+    "✨",
+    "💗"
+];
+
+function createLove() {
+
+    const love = document.createElement("div");
+
+    love.className = "floating-love";
+
+    love.innerText =
+        loveSymbols[
+            Math.floor(
+                Math.random() *
+                loveSymbols.length
+            )
+        ];
+
+    /*
+     * Posisi random di seluruh layar
+     */
+
+    love.style.left =
+        Math.random() * 95 + "vw";
+
+    love.style.top =
+        Math.random() * 85 + "vh";
+
+
+    /*
+     * Ukuran random
+     */
+
+    love.style.fontSize =
+        (Math.random() * 15 + 15) + "px";
+
+
+    /*
+     * Kecepatan random
+     */
+
+    love.style.animationDuration =
+        (Math.random() * 3 + 5) + "s";
+
+
+    document.body.appendChild(love);
+
+
+    /*
+     * Hapus setelah selesai
+     */
+
+    setTimeout(() => {
+
+        love.remove();
+
+    }, 8000);
+
+}
+
+
+/*
+ * Buat animasi pertama langsung
+ */
+
+for (let i = 0; i < 8; i++) {
+
+    setTimeout(
+        createLove,
+        i * 500
+    );
+
+}
+
+
+/*
+ * Lalu terus muncul
+ */
+
+setInterval(
+    createLove,
+    900
+);
+
+</script>
 
 </body>
 </html>
