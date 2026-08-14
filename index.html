@@ -514,7 +514,183 @@
     </style>
 </head>
 
+<script>
 
+    // JavaScript quotes kamu di sini
+
+</script>
+
+
+<script>
+/* =====================================================
+   ✦ DREAMY FLOATING HEARTS & STARS
+===================================================== */
+
+const dreamySymbols = [
+    {
+        symbol: "♡",
+        className: "floating-heart"
+    },
+    {
+        symbol: "♥",
+        className: "floating-heart"
+    },
+    {
+        symbol: "✦",
+        className: "floating-star"
+    },
+    {
+        symbol: "✧",
+        className: "floating-star"
+    }
+];
+
+
+function createDreamyDecoration() {
+
+    const decoration = document.createElement("div");
+
+    const random =
+        dreamySymbols[
+            Math.floor(
+                Math.random() * dreamySymbols.length
+            )
+        ];
+
+
+    decoration.classList.add(
+        "floating-decoration",
+        random.className
+    );
+
+
+    decoration.textContent =
+        random.symbol;
+
+
+    /* Posisi awal random */
+    const startX =
+        Math.random() * window.innerWidth;
+
+    const startY =
+        Math.random() * window.innerHeight;
+
+
+    decoration.style.left =
+        startX + "px";
+
+    decoration.style.top =
+        startY + "px";
+
+
+    /* Ukuran random */
+    const size =
+        Math.random() * 14 + 16;
+
+    decoration.style.fontSize =
+        size + "px";
+
+
+    /* Gerakan horizontal random */
+    const moveX =
+        Math.random() * 160 - 80;
+
+    decoration.style.setProperty(
+        "--move-x",
+        moveX + "px"
+    );
+
+
+    /* Kecepatan random */
+    const duration =
+        Math.random() * 4 + 6;
+
+    decoration.style.setProperty(
+        "--duration",
+        duration + "s"
+    );
+
+
+    document.body.appendChild(
+        decoration
+    );
+
+
+    /* Hapus setelah selesai */
+    setTimeout(() => {
+
+        decoration.remove();
+
+    }, duration * 1000);
+
+}
+
+
+/* Hati & bintang muncul perlahan */
+setInterval(
+    createDreamyDecoration,
+    1200
+);
+
+
+/* =====================================================
+   ✦ RANDOM SPARKLE
+===================================================== */
+
+function createSparkle() {
+
+    const sparkle =
+        document.createElement("div");
+
+    sparkle.classList.add(
+        "floating-sparkle"
+    );
+
+
+    sparkle.textContent =
+        Math.random() > 0.5
+        ? "✦"
+        : "✧";
+
+
+    sparkle.style.left =
+        Math.random() *
+        window.innerWidth +
+        "px";
+
+
+    sparkle.style.top =
+        Math.random() *
+        window.innerHeight +
+        "px";
+
+
+    sparkle.style.fontSize =
+        Math.random() * 10 + 10 +
+        "px";
+
+
+    document.body.appendChild(
+        sparkle
+    );
+
+
+    setTimeout(() => {
+
+        sparkle.remove();
+
+    }, 2500);
+
+}
+
+
+/* Sparkle lebih jarang */
+setInterval(
+    createSparkle,
+    1800
+);
+
+</script>
 <body>
 
 
